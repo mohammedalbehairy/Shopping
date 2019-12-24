@@ -4,13 +4,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './core/app.component';
-import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
     ShopComponent
   ],
   imports: [

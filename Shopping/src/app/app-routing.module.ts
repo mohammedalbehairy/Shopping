@@ -35,12 +35,12 @@ const routes: Routes =
           loadChildren: () => import(`./contacts/contacts.module`).then(m => m.ContactsModule)
         },
         {
-          path: 'card',
-          loadChildren: () => import(`./home/home.module`).then(m => m.HomeModule)
+          path: 'cart',
+          loadChildren: () => import(`./cart/cart.module`).then(m => m.CartModule)
         },
         {
-          path: 'home',
-          loadChildren: () => import(`./home/home.module`).then(m => m.HomeModule)
+          path: 'categories',
+          loadChildren: () => import(`./categories/categories.module`).then(m => m.CategoriesModule)
         },
         {
           path: '**',
