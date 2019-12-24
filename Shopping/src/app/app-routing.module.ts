@@ -19,12 +19,32 @@ const routes: Routes =
       loadChildren: () => import(`./auth/auth.module`).then(m => m.AuthModule)
     },
     {
-      path: 'products',
+      path: '',
       component: AdminComponent,
       children: [
         {
           path: 'home',
           loadChildren: () => import(`./home/home.module`).then(m => m.HomeModule)
+        },
+        {
+          path: 'blogs',
+          loadChildren: () => import(`./blogs/blogs.module`).then(m => m.BlogsModule)
+        },
+        {
+          path: 'contact',
+          loadChildren: () => import(`./contacts/contacts.module`).then(m => m.ContactsModule)
+        },
+        {
+          path: 'card',
+          loadChildren: () => import(`./home/home.module`).then(m => m.HomeModule)
+        },
+        {
+          path: 'home',
+          loadChildren: () => import(`./home/home.module`).then(m => m.HomeModule)
+        },
+        {
+          path: '**',
+          redirectTo: '/home'
         }
       ]
     },
