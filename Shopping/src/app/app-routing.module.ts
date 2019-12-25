@@ -1,9 +1,7 @@
 import { AdminComponent } from './core/components/admin/admin.component';
-import { AppComponent } from './core/app.component';
 import { AuthComponent } from './core/components/auth/auth.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes =
